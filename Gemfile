@@ -5,14 +5,16 @@ ruby "3.1.2"
 
 gem "bootsnap", require: false
 gem "devise"
+gem "devise-i18n"
 gem "importmap-rails"
 gem "jquery-rails"
 gem "puma", "~> 5.0"
 gem "rails", "~> 7.0.4", ">= 7.0.4.1"
+gem "russian"
 gem "sprockets-rails"
 gem "stimulus-rails"
 gem "turbo-rails"
-gem 'twitter-bootstrap-rails'
+gem "twitter-bootstrap-rails"
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 
 group :development, :test do
@@ -20,6 +22,10 @@ group :development, :test do
   gem "sqlite3", "~> 1.4"
 end
 
+group :development do
+  gem "web-console"
+end
+
 group :production do
-  gem 'pg'
+  gem "pg"
 end
