@@ -7,6 +7,8 @@ class Event < ApplicationRecord
 
   has_many :subscribers, through: :subscriptions, source: :user
   
+  has_many :photos
+  
   validates :user, presence: true
   
   validates :title, presence: true, length: {maximum: 255}
@@ -14,4 +16,8 @@ class Event < ApplicationRecord
   validates :address, presence: true
   
   validates :datetime, presence: true
+  
+  def visitors
+    (subscribers + [user]).uniq
+  end
 end
