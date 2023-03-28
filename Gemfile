@@ -4,9 +4,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby "3.1.2"
 
 gem "carrierwave"
+gem "cssbundling-rails"
 gem "devise"
 gem "devise-i18n"
-gem "gmaps4rails"
 gem "importmap-rails"
 gem "jsbundling-rails"
 gem "jquery-rails"

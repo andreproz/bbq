@@ -82,6 +82,8 @@ GEM
     commonjs (0.2.7)
     concurrent-ruby (1.2.0)
     crass (1.0.6)
+    cssbundling-rails (1.1.2)
+      railties (>= 6.0.0)
     date (3.3.3)
     debug (1.7.1)
       irb (>= 1.5.0)
@@ -99,7 +101,6 @@ GEM
     ffi (1.15.5)
     globalid (1.1.0)
       activesupport (>= 5.0)
-    gmaps4rails (2.1.2)
     i18n (1.12.0)
       concurrent-ruby (~> 1.0)
     image_processing (1.12.2)
@@ -237,10 +238,10 @@ PLATFORMS
 
 DEPENDENCIES
   carrierwave
+  cssbundling-rails
   debug
   devise
   devise-i18n
-  gmaps4rails
   importmap-rails
   jquery-rails
   jsbundling-rails
