@@ -7,9 +7,7 @@ class Event < ApplicationRecord
 
   has_many :subscribers, through: :subscriptions, source: :user
   
-  has_many :photos
-  
-  validates :user, presence: true
+  has_many :photos, dependent: :destroy
   
   validates :title, presence: true, length: {maximum: 255}
 
@@ -19,5 +17,9 @@ class Event < ApplicationRecord
   
   def visitors
     (subscribers + [user]).uniq
+  end
+
+  def pincode_valid?(pin2chek)
+    pincode == pin2chek
   end
 end

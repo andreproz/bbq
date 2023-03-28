@@ -27,6 +27,7 @@ ru:
       created: 'Вы создали новое мероприятие'
       updated: 'Вы обновили мероприятие'
       destroyed: 'Вы удалили мероприятие :('
+      wrong_pincode: 'Неверный пин-код!'
     users:
       updated: 'Вы обновили свой профиль' 
     comments:
@@ -41,7 +42,17 @@ ru:
       error: 'Что-то не так с фоткой'
       created: 'Вы добавили фотографию к событию'
       destroyed: 'Вы удалили фотку'   
-      
+
+  buttons:
+    go_back: 'Назад'
+    save: 'Сохранить'
+    delete: 'Удалить'
+    edit: 'Редактировать'
+    profile: 'Профиль'
+    show: 'Показать'
+    upload: 'Загрузить'
+    subscribe: 'Подписаться'
+
   app:
     name: 'Шашлыки'
     company: 'Хороший программист' 
@@ -53,3 +64,92 @@ ru:
   subscriptions:
     subscription:
       destroy_confirm: 'Вы уверены, что хотите удалить эту подписку?'       
+
+  destroy_confirm: "Вы уверены?"
+
+  words:
+    errors:
+      one: '%{count} ошибку'
+      few: '%{count} ошибки'
+      many: '%{count} ошибок'
+
+  actions:
+    send_instruction: "Выслать инструкции по адресу"
+    sign_in: "Войти"
+    sign_out: "Выйти"
+    sign_up: "Зарегистрироваться"
+    send: "Отправить"
+    change_password: "Сменить пароль"
+    forgot_your_password: "Забыли пароль?"
+    create_event: "Создать событие"
+    account:
+      edit: "Редактировать профиль"
+      delete: "Удалить аккаунт"
+      destroy_confirm: 'Вы уверены, что хотите удалить аккаунт?'
+    edit: "Изменить"
+
+  errors:
+    messages:
+      used_email: "Нельзя использовать чужой email для регистрации"
+      must_not_be_creator: "Нельзя подписываться на собственное событие"
+
+  event_mailer:
+    comment:
+      title: 'Новый комментарий'
+      author: 'Автор'
+      event: 'Событие'
+      datetime: 'Состоится'
+      owner: 'Организатор'
+    subscription:
+      title: 'Новая подписка'
+      name: 'Имя'
+      email: 'Email'
+      author: 'Автор'
+      event: 'Событие'
+      datetime: 'Состоится'
+      owner: 'Организатор'
+    photo:
+      title: 'Новое изображение'
+      author: 'Автор'
+      event: 'Событие'
+      datetime: 'Состоится'
+      owner: 'Организатор'
+      photo: 'Изображение'
+      link: 'Ссылка'
+
+  event:
+    pincode: 'Пин-код доступа'
+
+  form:
+    register: "Зарегистрироваться"
+    login: "Войти"
+    edit: "Редактировать профиль"
+    forgot_password: "Забыли пароль?"
+    left_empty: "(Оставьте пустым, если не хотите менять)"
+    minimal_length: "Минимальная длина: "
+    current_password_for_confirmation: '(Введите текущий пароль для подтверждения)'
+    edit_event: "Редактирование события"
+    events: "События"
+    new_event: "Новое событие"
+    pin_access: "Доступ только по пин-коду"
+    call: "Зовет:"
+    go_in: "Пойдут:"
+    i_come: "Я пойду:"
+    creator: "Организовал:"
+    form_contains: "Форма содержит"
+    user_has_no_events: "Пользователь пока не организовал ни одного события"
+    change_password: "Поменять пароль"
+    new_password: "Новый пароль"
+    current_password: "Текущий пароль"
+    pin: "Пин-код"
+    main_page: "На главную"
+
+  password_reset:
+    instruction: "Кто-то запросил ссылку для изменения вашего пароля, если это вы, то пройдите по ссылке ниже."
+    instruction2: "Если вы не запрашивали изменение пароля, игнорируйте данное сообщение."
+    instruction3: "Ваш пароль не изменится, если вы не перейдёте по ссылке ниже."
+
+  devise_links:
+    confirmation_fail: "Не получили инструкцию по восстановлению?"
+    unlock_fail: "Не получили инструкцию по разблокировке?"
+    sign_in_with: "Войти с помощью"
