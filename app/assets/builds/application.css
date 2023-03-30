@@ -18836,20 +18836,10 @@ textarea.form-control-lg {
   padding: 0 20px;
 }
 
-.mg-bt {
-  margin-bottom: 0;
-}
-
 .navbar {
   align-items: center;
   display: flex;
   justify-content: space-between;
-}
-
-.header-nav {
-  float: right;
-  vertical-align: baseline;
-  line-height: 32px;
 }
 
 .header-nav-item {
